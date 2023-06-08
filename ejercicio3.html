@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vocales en una frase</title>
+	
+	<link href="../css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<center><h1>Ejercicios JavaScript # 3</h1></center>
+  <nav>
+    <ul>
+      <li><a href="palindromo.html">Ejercicio 1</a></li>
+      <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+      <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+      <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+    </ul>
+  </nav>
+	
+	
+	
+	
+  <script>
+    function obtenerVocales() {
+      var frase = document.getElementById("frase").value;
+      var vocales = "";
+
+      for (var i = 0; i < frase.length; i++) {
+        var letra = frase.charAt(i).toLowerCase();
+
+        if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+          vocales += letra + " ";
+        }
+      }
+
+      if (vocales === "") {
+        document.getElementById("resultado").innerHTML = "No se encontraron vocales en la frase.";
+      } else {
+        document.getElementById("resultado").innerHTML = "Las vocales en la frase son: " + vocales;
+      }
+    }
+  </script>
+</head>
+<body>
+<center><h1>Vocales en una frase</h1>
+
+  <label for="frase">Ingrese una frase:</label>
+  <input type="text" id="frase" name="frase" required><br>
+
+  <button onclick="obtenerVocales()">Obtener Vocales</button>
+
+  <p id="resultado"></p> </center>  
+	
+	
+	<a href="../index.html" class="back-link">Volver a la página principal</a>
+</body>
+</html>

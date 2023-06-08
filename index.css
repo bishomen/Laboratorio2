@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    /* Estilos de menú */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Estilos de contenido de ejercicios */
+    .exercise-content {
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .exercise-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .exercise-description {
+      color: #555;
+    }
+  </style>
